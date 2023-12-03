@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
-}
+@media only screen and (max-width: 800px) {
+        #no-more-tables tbody,
+        #no-more-tables tr,
+        #no-more-tables td {
+          display: block;
+        }
+        #no-more-tables thead tr{
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        #no-more-tables td{
+            position: relative;
+            padding-left: 50%;
+            border:none;
+            border-bottom: 1px solid #fff;
+        }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+        #no-more-tables td:before{
+            content: attr(data-title);
+            position: absolute;
+            left: 6px;
+            font-weight: bold;
+        }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+        #no-more-tables tr{
+            border-bottom: 1px solid #fff;
+        }
+
+      }
+
+@media (max-width: 768px) {
+  table td[data-title="Reg no"],
+  table td[data-title="Year"] {
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/* search bar */
+.search-box{
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+/* icons style */
+.delete-icon {
+  cursor: pointer;
+  font-size: 30px;
+  color: black; /* Initial color of the icon */
+  transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete-icon:hover {
+  color: red; /* Color of the icon on hover */
 }
