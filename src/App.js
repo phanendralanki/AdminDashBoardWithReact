@@ -159,7 +159,7 @@ const App = () => {
               {/* Search bar */}
 
               {/* Table Code */}
-              <table className="table table-hover table-md">
+              <table className="table table-hover table-md table-sm table-lg">
                 <thead>
                   <tr>
                     <th>

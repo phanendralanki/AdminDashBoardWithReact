@@ -1,44 +1,46 @@
 @media only screen and (max-width: 800px) {
-        #no-more-tables tbody,
-        #no-more-tables tr,
-        #no-more-tables td {
-          display: block;
-        }
-        #no-more-tables thead tr{
-            position: absolute;
-            top: -9999px;
-            left: -9999px;
-        }
-        #no-more-tables td{
-            position: relative;
-            padding-left: 50%;
-            border:none;
-            border-bottom: 1px solid #fff;
-        }
+  #no-more-tables tbody,
+  #no-more-tables tr,
+  #no-more-tables td {
+    display: block;
+  }
+  #no-more-tables thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  #no-more-tables td {
+    position: relative;
+    padding-left: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+  }
+  #no-more-tables input[type="checkbox"] {
+    position: absolute;
+    left: 5px; /* Adjust the left position to align the checkbox */
+  }
 
-        #no-more-tables td:before{
-            content: attr(data-title);
-            position: absolute;
-            left: 6px;
-            font-weight: bold;
-        }
+  #no-more-tables td:before {
+    content: attr(data-title);
+    position: absolute;
+    left: 6px;
+    font-weight: bold;
+  }
 
-        #no-more-tables tr{
-            border-bottom: 1px solid #fff;
-        }
-
-      }
-
-@media (max-width: 768px) {
-  table td[data-title="Reg no"],
-  table td[data-title="Year"] {
-    display: none;
+  #no-more-tables tr {
+    border-bottom: 1px solid #fff;
   }
 }
 
+/* @media (max-width: 768px) {
+  table td[data-title="name"],
+  table td[data-title="email"] {
+    display: none;
+  }
+} */
 
 /* search bar */
-.search-box{
+.search-box {
   border-radius: 5px;
 }
 
